@@ -14,11 +14,56 @@ html, body {
 }
 
 header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background: #FCEFC7;
   background-position: cover;
   background-size: 100%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
+header img {
+  width: 250px;
+}
+
+.main-navigation__navitems {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.main-navigation__navitem {
+  margin-left: 1.5rem;
+}
+
+.main-navigation__navitem a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  background-color: #D9CD66;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+
+.cta a {
+  box-shadow: 1px 1px 1px 1px #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.main-navigation__navitem a:hover  {
+  color: #D9CD66;
+  background: #000;
+  transition: all 0.2s ease-in;
+}
 /* Marketing Content */
 
 .hero__wrapper {
