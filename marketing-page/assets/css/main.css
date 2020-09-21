@@ -51,14 +51,13 @@ header {
 
 .marketing__container{
   display: block;
-  width: 10%;
 }
 
 .marketing__container img {
   display: block;
   position: absolute;
-  top: 20%;
-  left: 5%;
+  top: 30%;
+  left: 10%;
 }
 
 .marketing__copy {
@@ -85,8 +84,13 @@ header {
   font-size: 28px;
   font-weight: 400;
 }
+
 @media (max-width: 768px) {
-  .wrapper {
+  .marketing__container img {
+    display: block;
+    position: static;
+  }
+  .marketing__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
