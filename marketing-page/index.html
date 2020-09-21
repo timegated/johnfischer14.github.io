@@ -4,26 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" media="(min-width: 1200px)" href="./assets/css/main.css">
+  <link rel="stylesheet" type="text/css" media="(max-width: 768px)" href="./assets/css/mobile.css">
   <title>PugSports</title>
 </head>
 
 <body>
-  <main class="marketing__maincontent" role="marketing main content">
-    <header>
-      <img src="./assets/images/PugSportsBannerTransparant.png" alt="The Pug Sports logo">
-    </header>
-    <section class="marketing__wrapper">
-      <div class="marketing__container">
+  <header>
+    <img src="./assets/images/PugSportsBannerTransparant.png" alt="The Pug Sports logo">
+  </header>
+  <main class="marketing__main" role="marketing main content">
+    <section class="hero__wrapper">
+      <div class="hero__container">
         <img src="./assets/images/pug_logo_2.svg" alt="Pug sports mascot">
       </div>
-      <div class="marketing__copy">
-        <div class="marketing__copy--wrapper">
-          <p class="marketing__copy--tagline">Pug Sports is a new way for you to find pick up games that flexes with
+      <div class="hero__copy">
+        <div class="hero__copy--wrapper">
+          <p class="hero__copy--tagline">Pug Sports is a new way for you to find pick up games that flexes with
             your schedule</p>
-          <p class="marketing__copy--line-two">Do you like playing sports? Do you want to create or join pick up games
+          <p class="hero__copy--line-two">Do you like playing sports? Do you want to create or join pick up games
             around your area?</p>
-          <p class="marketing__copy--line-three">Pug sports is here to help! It's more than just a cute dog, its a way
+          <p class="hero__copy--line-three">Pug sports is here to help! It's more than just a cute dog, its a way
             for you to enjoy pick up games with others!</p>
         </div>
       </div>
@@ -35,9 +37,8 @@
             <img src="./assets/images/undraw_basketball_agx4.svg" alt="A basketball game" width="250">
           </div>
           <div class="feature__copy">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero eum accusantium, obcaecati
-              dicta illum ab incidunt nemo dolores est suscipit, tempore exercitationem nobis molestias magnam
-              voluptatum, ipsam veniam corporis.
+            <p>
+              Stay Healthy. Make Friends.
             </p>
           </div>
         </div>
@@ -46,9 +47,8 @@
             <img src="./assets/images/undraw_home_run_oerh.svg" alt="A basketball game" width="250">
           </div>
           <div class="feature__copy">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero eum accusantium, obcaecati
-              dicta illum ab incidunt nemo dolores est suscipit, tempore exercitationem nobis molestias magnam
-              voluptatum, ipsam veniam corporis.
+            <p>
+              Use our interactive map to search for games.
             </p>
           </div>
         </div>
@@ -57,12 +57,16 @@
             <img src="./assets/images/undraw_bike_ride_7xit.svg" alt="A basketball game" width="250">
           </div>
           <div class="feature__copy">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero eum accusantium, obcaecati
-              dicta illum ab incidunt nemo dolores est suscipit, tempore exercitationem nobis molestias magnam
-              voluptatum, ipsam veniam corporis.
+            <p>
+              Stay connected to the people you play with.
             </p>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="beta-sign-up">
+      <div class="beta-sign-up__container">
+        <button class="beta-sign-up__button">Sign Up For Beta</button>
       </div>
     </section>
   </main>

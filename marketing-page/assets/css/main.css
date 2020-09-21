@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Kufam', cursive;
 }
 
 html, body {
@@ -11,21 +14,57 @@ html, body {
 }
 
 header {
-  background: #D9E2EC;
+  background: #FCEFC7;
+  background-position: cover;
+  background-size: 100%;
 }
 
-.marketing__wrapper {
+/* Marketing Content */
+
+.hero__wrapper {
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  margin-top: 10rem;
+  background: #D9E2EC;
+  padding: 10rem;
+}
+.hero__container{
+  display: block;
 }
 
-.feature__wrapper {
-  margin-top: 10rem;
+.hero__container img {
+  display: block;
+}
+
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 46em;
   margin-left: 1.5rem;
-  margin-right: 1.5rem;
+}
+
+.hero__copy--tagline {
+  font-size: 42px;
+  font-weight: 700;
+  margin-right: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.hero__copy--line-two {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.hero__copy--line-three {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* Features */
+.feature__wrapper {
+  background: #D9CD66;
 }
 
 .feature__container {
@@ -37,62 +76,52 @@ header {
 .feature__card {
   display: flex;
   flex-direction: column;
-  flex: 0 1 10%;
+  flex: 0 1;
+  padding: 2rem;
 }
 
 .feature__container--img {
+  flex: 0 1 30%;
   background: #D9E2EC;
   border-radius: 50%;
+  margin-bottom: 1.5rem;
 }
 
 .feature__container--img img {
   border-radius: 50%;
 }
 
-.marketing__container{
-  display: block;
-}
-
-.marketing__container img {
-  display: block;
-  position: absolute;
-  top: 30%;
-  left: 10%;
-}
-
-.marketing__copy {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 46em;
-  margin-left: 1.5rem;
-}
-
-.marketing__copy--tagline {
-  font-size: 42px;
-  font-weight: 700;
-  margin-right: 0.5rem;
-  margin-bottom: 0.75rem;
-}
-.marketing__copy--line-two {
+.feature__copy p {
   font-size: 32px;
   font-weight: 500;
-  margin-bottom: 0.75rem;
 }
 
-.marketing__copy--line-three {
-  font-size: 28px;
-  font-weight: 400;
+/* Beta Sign Up */
+
+.beta-sign-up {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10rem;
 }
 
-@media (max-width: 768px) {
-  .marketing__container img {
-    display: block;
-    position: static;
-  }
-  .marketing__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.beta-sign-up__container {
+  padding: 3rem;
+}
+
+.beta-sign-up__button {
+  padding: 2.5rem;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #000;
+  background-color: #D9CD66;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.beta-sign-up__button:hover {
+  color: #D9CD66;
+  background: #000;
+  transition: all 0.2s ease-in;
 }
