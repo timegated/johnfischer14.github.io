@@ -67,48 +67,65 @@ header img {
 /* Marketing Content */
 
 .hero__wrapper {
+  max-width: 46em;
+  border-radius: 50%;
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  background: #D9E2EC;
-  padding: 10rem;
+  flex-direction: column;
+  background: #d9e2ecd9;
+  padding: 5rem 0;
+  margin: 5rem auto;
 }
-.hero__container{
-  display: block;
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 46em;
 }
 
 .hero__container img {
   display: block;
+  margin: 0 auto;
 }
 
 .hero__copy {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   max-width: 46em;
   margin-left: 1.5rem;
 }
 
+.hero__copy-inner {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
 .hero__copy--tagline {
-  font-size: 42px;
+  flex: 1 0 100%;
+  font-size: 32px;
   font-weight: 700;
   margin-right: 0.5rem;
   margin-bottom: 0.75rem;
 }
+
 .hero__copy--line-two {
+  flex: 1 0 100%;
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 0.75rem;
 }
 
 .hero__copy--line-three {
+  flex: 1 0 100%;
   font-size: 28px;
   font-weight: 400;
 }
 
 /* Features */
 .feature__wrapper {
+  margin-top: 2.5rem;
   background: #D9CD66;
 }
 
