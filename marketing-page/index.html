@@ -4,46 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="games">
+  <meta name="keywords" content="group activities">
+  <meta name="keywords" content="group sports">
+  <meta name="keywords" content="amateur sports">
+  <meta name="keywords" content="sports clubs">
+  <meta name="keywords" content="amateur hockey">
+  <meta name="keywords" content="amateur baseball">
+  <meta name="keywords" content="amateur basketball">
+  <meta name="keywords" content="amateur cycling">
+  <meta name="keywords" content="amateur soccer">
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
   <title>PugSports</title>
 </head>
-
 <body>
-  <header role="branding">
-    <img src="./assets/images/PugSportsBannerTransparant.png" alt="The Pug Sports logo">
-    <nav>
-      <ul>
-        <li>
-          <a href="#">About</a>
+  <header role="branding" class="main-nav-container">
+    <div class="main-nav-container__imgcontainer">
+      <img src="./assets/images/PugSportsBannerTransparant.png" alt="The Pug Sports logo">
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__navlist">
+        <li class="main-nav__navitem">
+          <a class="main-nav__navlink" href="#">About</a>
         </li>
-        <li>
-          <a href="#">Try It Out</a>
+        <li class="main-nav__navitem">
+          <a class="main-nav__navlink" href="#">Try It</a>
         </li>
-        <li>
-          <a href="#">Sign Up For Beta</a>
+        <li class="main-nav__navitem">
+          <a class="main-nav__navlink" href="#">Beta</a>
         </li>
       </ul>
     </nav>
   </header>
   <main role="marketing">
-    <section>
-      <div>
+    <section class="featured">
+      <div class="featured__imgcontainer">
         <img src="./assets/images/pug_logo_2.svg" alt="Pug sports mascot">
-        <p>Pug Sports is a new way for you to find pick up games that flexes with
+        <p class="featured__tagline--bigbold">Pug Sports is a new way for you to find pick up games that flexes with
           your schedule</p>
       </div>
-      <div>
-        <div>
-          <p>Do you like playing sports? Do you want to create or join pick up games
+      <div class="featured__taglines">
+          <p class="featured__tagline-1">Like playing sports? Want to create or join pick up games
             around your area?</p>
-          <p>Pug sports is here to help! It's more than just a cute dog, its a way
+          <p class="featured__tagline-2">Pug sports is here to help! It's more than just a cute dog, its a way
             for you to enjoy pick up games with others!</p>
-        </div>
       </div>
     </section>
-    <section>
-      <h2>Why Pug Sports?</h2>
+    <section class="features-section">
+      <h2 class="features-section__title">Why Pug Sports?</h2>
       <div>
         <div>
           <div>
@@ -61,7 +70,7 @@
           </div>
           <div>
             <p>
-              Use our interactive map to search for games.
+              Use our interactive map to easily search for games.
             </p>
           </div>
         </div>

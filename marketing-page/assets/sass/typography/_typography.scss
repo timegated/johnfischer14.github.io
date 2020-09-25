@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap');
 
 html {
   font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Kufam', sans-serif;
+  font-family: $font-family-1;
   font-weight: 700;
 }
 
@@ -33,6 +34,32 @@ h6 {
   font-size: 20pt;
 }
 
-p, em, b, a {
+p, em, b, a, span {
   font-size: 18pt;
+  font-family: $font-family-2
+}
+
+.main-nav__navlink {
+  font-size: 14pt;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.featured__tagline--bigbold {
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.featured__tagline--bigbold span {
+  font-size: 22pt;
+}
+
+@media (min-width: 768px) {
+  .main-nav__navlink {
+    font-size: 18pt;
+  }
+}
+
+@media (min-width: 1025px) {
+  
 }
