@@ -4,15 +4,11 @@ html {
   padding: 0;
 }
 
-// *,
-// *:before,
-// *:after {
-//   box-sizing: inherit;
-//   margin: inherit;
-//   padding: inherit;
-//   max-width: 100%;
-// }
-
-* + * {
-  margin: 20px;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: inherit;
+  padding: inherit;
+  max-width: 100%;
 }
