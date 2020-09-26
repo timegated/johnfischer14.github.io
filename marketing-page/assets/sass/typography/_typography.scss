@@ -54,6 +54,10 @@ p, em, b, a, span {
   font-size: 22pt;
 }
 
+.features-section__copy p {
+  font-size: 30pt;
+}
+
 @media (min-width: 768px) {
   .main-nav__navlink {
     font-size: 18pt;

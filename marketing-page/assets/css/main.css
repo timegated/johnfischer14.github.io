@@ -12,7 +12,7 @@
   list-style: none;
 }
 .main-nav-container .main-nav__navlist .main-nav__navitem {
-  margin-left: 0.5rem;
+  margin-right: 1.5rem;
 }
 
 .featured {
@@ -31,7 +31,11 @@
 
 .features-section {
   margin-top: 6rem;
+  padding: 1.5rem 0;
   text-align: center;
+}
+.features-section article {
+  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -48,6 +52,40 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .featured {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .featured__taglines {
+    max-width: 46em;
+    margin-left: 1.5rem;
+  }
+
+  .features-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .features-section__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid black;
+  }
+  .features-section__item:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+  .features-section__item:nth-child(3) .features-section__copy p {
+    margin-left: 0;
+  }
+  .features-section__img-container {
+    max-width: 100%;
+  }
+  .features-section__copy {
+    max-width: 46em;
+  }
 }
 html {
   box-sizing: border-box;
@@ -55,13 +93,8 @@ html {
   padding: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  margin: inherit;
-  padding: inherit;
-  max-width: 100%;
+* + * {
+  margin: 20px;
 }
 
 html {
@@ -115,6 +148,10 @@ p, em, b, a, span {
 
 .featured__tagline--bigbold span {
   font-size: 22pt;
+}
+
+.features-section__copy p {
+  font-size: 30pt;
 }
 
 @media (min-width: 768px) {
