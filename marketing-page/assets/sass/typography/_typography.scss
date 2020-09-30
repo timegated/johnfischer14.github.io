@@ -47,11 +47,24 @@ p, em, b, a, span {
 
 .featured__tagline--bigbold {
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 35pt;
 }
 
 .featured__tagline--bigbold span {
-  font-size: 22pt;
+  font-size: 30pt;
+}
+
+.featured .button {
+  font-size: 20pt;
+  font-weight: 600;
+}
+
+.additional__tagline-1 {
+  font-size: 30pt;
+}
+
+.additional__tagline-2 {
+  font-size: 30pt;
 }
 
 .features-section__copy p {
