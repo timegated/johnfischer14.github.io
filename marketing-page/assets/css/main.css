@@ -211,11 +211,13 @@ p, em, b, a, span {
   border-radius: 15px;
   border: none;
   background-color: #FFD102;
+  box-shadow: 1px 1px 1em #000;
   cursor: pointer;
 }
 .button:hover {
-  background: #000;
+  background-color: #000;
   color: #FFFFFF;
+  transition: background-color 0.2s ease-in;
 }
 
 @media (min-width: 768px) {
