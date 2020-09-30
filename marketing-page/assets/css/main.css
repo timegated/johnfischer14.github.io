@@ -3,9 +3,6 @@
 .main-nav-container {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 .main-nav-container .main-nav__navlist {
@@ -20,7 +17,12 @@
 }
 
 .featured {
-  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+}
+.featured__imgcontainer {
+  width: 100%;
+  height: auto;
 }
 .featured__taglines {
   margin: 0.75em;
@@ -56,9 +58,11 @@
 
   .featured {
     display: flex;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     align-content: center;
+    margin: 0.75em;
   }
   .featured__taglines {
     max-width: 46em;
@@ -70,6 +74,7 @@
 
   .additional {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
     margin-top: 5rem;
