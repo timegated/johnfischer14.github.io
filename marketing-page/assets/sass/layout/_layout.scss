@@ -19,13 +19,11 @@
 .featured {
     display: flex;
     flex-direction: column;
-    // align-items: flex-end;
-    // justify-content: center;
-    // align-content: center;
 
   &__imgcontainer {
     width: 100%;
     height: auto;
+    margin: 0.75rem;
   }
 
  &__taglines {
@@ -72,14 +70,20 @@
     align-content: center;
     margin: 0.75em;
 
+    &__imgcontainer {
+      width: 30%;
+      height: auto;
+    }
     &__taglines {
-      max-width: 46em;
-      margin-left: 5rem;
+      max-width: 30%;
     }
 
     &__buttons {
+      margin-top: 4rem;
+
       .button {
-        margin: 1.5rem;
+        margin: 0 0 3rem 0;
+        width: 100%;
       }
     }
   }
@@ -92,16 +96,9 @@
     margin-top: 5rem;
     margin-left: 2rem;
     margin-right: 2rem;
+
     &__copy-container {
-      max-width: 46em;
-    }
-
-    &__tagline-1 {
-      margin-top: 3rem;
-    }
-
-    &__tagline-2 {
-      margin-top: 1.5rem;
+      max-width: 30%;
     }
   }
 
