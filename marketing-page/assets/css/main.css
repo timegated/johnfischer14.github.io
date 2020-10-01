@@ -30,8 +30,19 @@
   max-width: 100%;
 }
 .featured__buttons {
-  max-width: 100%;
-  margin-left: 5em;
+  display: block;
+  max-width: 80%;
+  margin-left: auto;
+}
+@media (min-width: 375px) {
+  .featured__buttons {
+    max-width: 75%;
+  }
+}
+@media (min-width: 500px) and (min-width: 680px) {
+  .featured__buttons {
+    max-width: 65%;
+  }
 }
 
 .additional {
@@ -85,11 +96,6 @@
   }
   .featured__buttons {
     margin: 3rem 0 3rem 0;
-  }
-  .featured__buttons .button {
-    margin: 0 auto;
-    width: 50%;
-    align-self: center;
   }
 
   .additional {
@@ -201,7 +207,7 @@ p, em, b, a, span {
 @media (min-width: 768px) {
   .featured__tagline--bigbold {
     text-align: left;
-    font-size: 30pt;
+    font-size: 40pt;
   }
 }
 
@@ -213,6 +219,7 @@ p, em, b, a, span {
 .additional__tagline {
   font-size: 18pt;
   text-align: center;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   .additional__tagline {
@@ -222,7 +229,12 @@ p, em, b, a, span {
 }
 
 .features-section__copy p {
-  font-size: 30pt;
+  font-size: 18pt;
+}
+@media (min-width: 768px) {
+  .features-section__copy p {
+    font-size: 30pt;
+  }
 }
 
 .button {
