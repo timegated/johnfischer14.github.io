@@ -4,8 +4,10 @@
   const modalOverLay = document.querySelector('.overlay')
   const modalBetaForm = document.querySelector('#modal-beta-form');
 
-  checkUsOut.addEventListener('click', () => {
-    modalBetaContainer.style = 'display: block';
-    modalOverLay.style = 'display: block;'
-  })
+  checkUsOut.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalBetaContainer.classList.toggle('none');
+    modalOverLay.classList.toggle('none')
+  });
+ 
 })();
