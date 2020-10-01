@@ -1,9 +1,15 @@
 
+.additional {
+  &__copy-container {
+    border-radius: 15px;
+    box-shadow: 1px 1px 1em #000;
+    text-align: left;
+    max-width: 100%;
+  }
+}
 
 @media (min-width: 768px) {
   .additional {
-  
-
     & p {
       margin: 0;
       padding: 3rem;
@@ -16,6 +22,7 @@
       text-align: left;
       padding: 4rem;
       min-height: 250px;
+      max-width: 46em;
     }
   }
 }

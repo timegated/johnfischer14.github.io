@@ -21,16 +21,27 @@
   flex-direction: column;
 }
 .featured__imgcontainer {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   margin: 0.75rem;
 }
 .featured__taglines {
   margin: 0.75em;
+  max-width: 100%;
 }
-.featured__taglines .featured__tagline-1 {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+.featured__buttons {
+  max-width: 100%;
+  margin-left: 5em;
+}
+
+.additional {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.additional__copy-container {
+  margin: 1.5rem;
+  padding: 1.5rem;
 }
 
 .features-section {
@@ -62,27 +73,29 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    align-content: center;
     margin: 0.75em;
   }
   .featured__imgcontainer {
-    width: 30%;
+    float: left;
+    max-width: 30%;
     height: auto;
   }
   .featured__taglines {
-    max-width: 30%;
+    max-width: 50%;
   }
   .featured__buttons {
-    margin-top: 4rem;
+    margin: 3rem 0 3rem 0;
   }
   .featured__buttons .button {
-    margin: 0 0 3rem 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 50%;
+    align-self: center;
   }
 
   .additional {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: baseline;
     margin-top: 5rem;
@@ -170,18 +183,26 @@ p, em, b, a, span {
 }
 
 .main-nav__navlink {
-  font-size: 14pt;
+  font-size: 18pt;
   text-decoration: none;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  .main-nav__navlink {
+    font-size: 20pt;
+  }
 }
 
 .featured__tagline--bigbold {
   font-weight: bold;
-  font-size: 35pt;
+  font-size: 25pt;
+  text-align: center;
 }
-
-.featured__tagline--bigbold span {
-  font-size: 30pt;
+@media (min-width: 768px) {
+  .featured__tagline--bigbold {
+    text-align: left;
+    font-size: 30pt;
+  }
 }
 
 .featured .button {
@@ -189,35 +210,39 @@ p, em, b, a, span {
   font-weight: 600;
 }
 
-.additional__tagline-1 {
-  font-size: 30pt;
+.additional__tagline {
+  font-size: 18pt;
+  text-align: center;
 }
-
-.additional__tagline-2 {
-  font-size: 30pt;
+@media (min-width: 768px) {
+  .additional__tagline {
+    text-align: left;
+    font-size: 30pt;
+  }
 }
 
 .features-section__copy p {
   font-size: 30pt;
 }
 
-@media (min-width: 768px) {
-  .main-nav__navlink {
-    font-size: 18pt;
-  }
-}
 .button {
   padding: 1.75rem;
   border-radius: 15px;
   border: none;
   background-color: #FFD102;
-  box-shadow: 1px 1px 1em #000;
   cursor: pointer;
 }
 .button:hover {
   background-color: #000;
   color: #FFFFFF;
   transition: background-color 0.2s ease-in;
+}
+
+.additional__copy-container {
+  border-radius: 15px;
+  box-shadow: 1px 1px 1em #000;
+  text-align: left;
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -231,6 +256,7 @@ p, em, b, a, span {
     text-align: left;
     padding: 4rem;
     min-height: 250px;
+    max-width: 46em;
   }
 }
 

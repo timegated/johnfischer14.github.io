@@ -40,18 +40,22 @@ p, em, b, a, span {
 }
 
 .main-nav__navlink {
-  font-size: 14pt;
+  font-size: 18pt;
   text-decoration: none;
   font-weight: 700;
+  @media (min-width:768px) {
+    font-size: 20pt;
+  }
 }
 
 .featured__tagline--bigbold {
   font-weight: bold;
-  font-size: 35pt;
-}
-
-.featured__tagline--bigbold span {
-  font-size: 30pt;
+  font-size: 25pt;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+    font-size: 30pt;
+  }
 }
 
 .featured .button {
@@ -59,23 +63,19 @@ p, em, b, a, span {
   font-weight: 600;
 }
 
-.additional__tagline-1 {
-  font-size: 30pt;
-}
-
-.additional__tagline-2 {
-  font-size: 30pt;
+.additional__tagline {
+  font-size: 18pt;
+  text-align: center;
+  @media (min-width: 768px) {
+      text-align: left;
+      font-size: 30pt;
+  }
 }
 
 .features-section__copy p {
   font-size: 30pt;
 }
 
-@media (min-width: 768px) {
-  .main-nav__navlink {
-    font-size: 18pt;
-  }
-}
 
 @media (min-width: 1025px) {
   
