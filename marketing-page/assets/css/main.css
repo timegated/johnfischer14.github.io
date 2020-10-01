@@ -267,7 +267,6 @@ p, em, b, a, span {
     box-shadow: 1px 1px 1em #000;
     text-align: left;
     padding: 4rem;
-    min-height: 250px;
     max-width: 46em;
   }
 }
