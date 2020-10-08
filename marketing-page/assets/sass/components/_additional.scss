@@ -1,8 +1,9 @@
 
 .additional {
+  background-color: $neutral-3;
   &__copy-container {
     border-radius: 15px;
-    box-shadow: 1px 1px 1em #000;
+    box-shadow: 1px 1px 1em $neutral-1;
     text-align: left;
     max-width: 100%;
   }
@@ -18,7 +19,7 @@
 
     &__copy-container {
       border-radius: 15px;
-      box-shadow: 1px 1px 1em #000;
+      box-shadow: 1px 1px 1em $neutral-1;
       text-align: left;
       padding: 4rem;
       max-width: 46em;

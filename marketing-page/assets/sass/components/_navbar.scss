@@ -2,15 +2,12 @@
   background-color: $background-color-yellow-1;
 
   .main-nav {
-    background-color: $background-color-yellow-4;
     
     &__navitem {
-      background-color: $background-color-yellow-3;
       border-radius: 15px;
 
       .main-nav__navlink {
         color: $neutral-1;
-        padding: 0.75em;
         margin: 0;
       }
     }

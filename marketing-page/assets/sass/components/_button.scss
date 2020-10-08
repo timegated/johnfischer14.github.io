@@ -2,12 +2,13 @@
   padding: 1.75rem;
   border-radius: 15px;
   border: none;
-  background-color: #FFD102;
+  background-color: $background-color-yellow-4;
   cursor: pointer;
 
   &:hover {
-    background-color: #000;
-    color: #FFFFFF;
+    background-color: $neutral-1;
+    color: $neutral-4;
+    box-shadow: 1px 1px 1px 1px $neutral-2;
     transition: background-color 0.2s ease-in;
   }
 }

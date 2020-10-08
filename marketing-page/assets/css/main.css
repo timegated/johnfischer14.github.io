@@ -4,12 +4,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
-}
-.main-nav-container .main-nav {
-  margin: 2em 0;
 }
 .main-nav-container .main-nav__navlist {
   display: flex;
@@ -26,7 +23,6 @@
 .featured {
   display: flex;
   flex-direction: column;
-  margin-top: 25rem;
 }
 .featured__imgcontainer {
   max-width: 100%;
@@ -57,7 +53,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 5rem 2rem 2rem 2rem;
 }
 .additional__copy-container {
   margin: 1.5rem;
@@ -98,7 +93,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 20rem 0 20rem 0;
+    position: relative;
   }
   .featured__imgcontainer {
     max-width: 65%;
@@ -118,7 +113,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
-    margin: 5rem 2rem 10rem;
+    width: 100%;
   }
   .additional__copy-container {
     max-width: 30%;
@@ -149,6 +144,7 @@
 }
 html {
   box-sizing: border-box;
+  background-color: #FCE588;
   margin: 0;
   padding: 0;
 }
@@ -253,18 +249,22 @@ p, em, label, input, b, a, span {
   padding: 1.75rem;
   border-radius: 15px;
   border: none;
-  background-color: #FFD102;
+  background-color: #F7C948;
   cursor: pointer;
 }
 .button:hover {
-  background-color: #000;
+  background-color: #222222;
   color: #FFFFFF;
+  box-shadow: 1px 1px 1px 1px #3B3B3B;
   transition: background-color 0.2s ease-in;
 }
 
+.additional {
+  background-color: #E1E1E1;
+}
 .additional__copy-container {
   border-radius: 15px;
-  box-shadow: 1px 1px 1em #000;
+  box-shadow: 1px 1px 1em #222222;
   text-align: left;
   max-width: 100%;
 }
@@ -276,7 +276,7 @@ p, em, label, input, b, a, span {
   }
   .additional__copy-container {
     border-radius: 15px;
-    box-shadow: 1px 1px 1em #000;
+    box-shadow: 1px 1px 1em #222222;
     text-align: left;
     padding: 4rem;
     max-width: 46em;
@@ -288,7 +288,7 @@ p, em, label, input, b, a, span {
   top: 30%;
   left: 35%;
   right: 25%;
-  background: #FFD201;
+  background: #F7C948;
   border: 1px solid #000;
   border-radius: 15px;
   padding: 3.5rem;
@@ -296,7 +296,7 @@ p, em, label, input, b, a, span {
   grid-template-columns: 1fr 1fr;
 }
 .modal-beta__title {
-  background-color: #FFF;
+  background-color: #E1E1E1;
   align-self: center;
   border-radius: 15px;
 }
@@ -336,17 +336,16 @@ p, em, label, input, b, a, span {
 .main-nav-container {
   background-color: #FFF3C4;
 }
-.main-nav-container .main-nav {
-  background-color: #F7C948;
-}
 .main-nav-container .main-nav__navitem {
-  background-color: #FADB5F;
   border-radius: 15px;
 }
 .main-nav-container .main-nav__navitem .main-nav__navlink {
   color: #222222;
-  padding: 0.75em;
   margin: 0;
+}
+
+.featured {
+  background-color: #fff5ce;
 }
 
 /*# sourceMappingURL=main.css.map */

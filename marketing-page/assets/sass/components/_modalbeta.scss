@@ -4,7 +4,7 @@
   top: 30%;
   left: 35%;
   right: 25%;
-  background: #FFD201;
+  background: $background-color-yellow-4;
   border: 1px solid #000;
   border-radius: 15px;
   padding: 3.50rem;
@@ -13,7 +13,7 @@
   
 
  &__title {
-   background-color: #FFF;
+   background-color: $neutral-3;
    align-self: center;
    border-radius: 15px;
  }
