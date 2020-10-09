@@ -36,7 +36,10 @@ h6 {
 
 p, em, label, input, b, a, span {
   font-size: 18pt;
-  font-family: $font-family-2
+  font-family: $font-family-2;
+  @media (min-width: 375px) {
+    font-size: 20pt;
+  }
 }
 
 .main-nav__navlink {
@@ -75,7 +78,7 @@ p, em, label, input, b, a, span {
 }
 
 .features-section__copy p {
-  font-size: 18pt;
+  font-size: 20pt;
   @media (min-width: 768px) {
     font-size: 30pt;
   }
