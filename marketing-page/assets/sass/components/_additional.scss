@@ -1,7 +1,11 @@
 
 .additional {
-  background-color: $neutral-4;
+  background-color: lighten($neutral-2, 8);
+  &__title {
+    color: $background-color-yellow-3;
+  }
   &__copy-container {
+    background-color: $background-color-yellow-3;
     border-radius: 15px;
     box-shadow: 1px 1px 1em $neutral-2;
     text-align: left;

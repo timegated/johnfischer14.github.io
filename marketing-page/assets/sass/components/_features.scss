@@ -1,6 +1,9 @@
 .features-section {
-  background-color: $neutral-4;
-
+  background-color: $neutral-2;
+  &__title {
+    color: $background-color-yellow-3;
+    padding: 10%;
+  }
   &__item {
     background-color: $background-color-yellow-3;
     border-radius: 30px;
