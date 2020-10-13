@@ -24,6 +24,7 @@
 .featured {
   display: flex;
   flex-direction: column;
+  margin: 10rem 0 0 0;
 }
 .featured__imgcontainer {
   max-width: 100%;
@@ -79,13 +80,14 @@
   padding: 5%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
 }
 .footer__container .footer__navlist {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   list-style: none;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   padding: 0;
 }
 .footer__container .footer__copy {
@@ -121,6 +123,7 @@
     justify-content: center;
     position: relative;
     height: 750px;
+    margin: 0;
   }
   .featured__imgcontainer {
     max-width: 65%;
@@ -188,6 +191,30 @@
   .features-section__copy {
     max-width: 46em;
   }
+
+  .footer__container {
+    background-color: #FCE588;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__container .footer__navlist {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+  }
+  .footer__container .footer__navlist .footer__navitem {
+    margin-left: 0.75rem;
+  }
+  .footer__container .footer__copy {
+    max-width: 46em;
+    margin: 0;
+    padding: 0;
+  }
 }
 html, body {
   box-sizing: border-box;
@@ -239,12 +266,12 @@ h6 {
   font-size: 20pt;
 }
 
-p, em, label, input, b, a, span {
+em, label, input, b, span {
   font-size: 18pt;
   font-family: "Cairo", "sans-serif";
 }
 @media (min-width: 375px) {
-  p, em, label, input, b, a, span {
+  em, label, input, b, span {
     font-size: 20pt;
   }
 }
@@ -261,7 +288,7 @@ p, em, label, input, b, a, span {
 }
 
 .footer__navlink {
-  font-size: 14pt;
+  font-size: 12pt;
   text-decoration: none;
   font-weight: 600;
 }
@@ -276,7 +303,7 @@ p, em, label, input, b, a, span {
 }
 @media (min-width: 768px) {
   .footer__copy {
-    font-size: 10pt;
+    font-size: 14pt;
   }
 }
 
@@ -452,6 +479,23 @@ p, em, label, input, b, a, span {
 }
 .footer__container .footer__navlink {
   color: #222222;
+}
+
+@media (min-width: 768px) {
+  svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+  }
+}
+
+.additional__svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
