@@ -65,11 +65,11 @@
   text-align: center;
   margin-top: 5rem;
   &__item {
-    margin-top: 0.75rem;
+    padding: 1.5rem;
   }
 
   &:nth-child(3) {
-    padding: 0;
+    padding: 1.5rem;
   }
 
   article p {
@@ -77,6 +77,26 @@
   }
 }
 
+.footer__container {
+  background-color: $background-color-yellow-2;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .footer__navlist {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer__copy {
+    max-width: 46em;
+    margin: 0;
+    padding: 0;
+  }
+}
 @media (min-width: 768px) {
   .main-nav-container {
     display: flex;
