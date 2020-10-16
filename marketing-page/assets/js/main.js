@@ -1,13 +1,13 @@
-(function () {
-  const checkUsOut = document.querySelector('#cta-event');
-  const modalBetaContainer = document.querySelector('#modal-beta');
-  const modalOverLay = document.querySelector('.overlay')
-  const modalBetaForm = document.querySelector('#modal-beta-form');
+import { UI } from './UI/domelements.js';
 
-  checkUsOut.addEventListener('click', (e) => {
+(function () {
+  
+  const ui = new UI();  
+
+  ui.cta.addEventListener('click', (e) => {
     e.preventDefault();
-    modalBetaContainer.classList.toggle('none');
-    modalOverLay.classList.toggle('none')
+    ui.modalContainer.classList.toggle('none');
+    ui.overLay.classList.toggle('none')
   });
  
 })();
