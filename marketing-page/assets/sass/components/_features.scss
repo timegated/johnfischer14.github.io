@@ -2,11 +2,11 @@
   background-color: $neutral-2;
   &__title {
     color: $background-color-yellow-3;
-    padding: 5%;
   }
+  
   &__item {
-    background-color: $background-color-yellow-3;
     border-radius: 30px;
+    color: $background-color-yellow-3;
   }
 
   &__img-container {
