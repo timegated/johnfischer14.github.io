@@ -453,6 +453,13 @@ em, label, input, b, span {
 .main-nav-container .main-nav__navitem .main-nav__navlink {
   color: #222222;
   margin: 0;
+  padding: 1.25rem;
+}
+.main-nav-container .main-nav__navitem .main-nav__navlink:hover, .main-nav-container .main-nav__navitem .main-nav__navlink:visited {
+  color: #3B3B3B;
+  border: 1px solid #3B3B3B;
+  border-radius: 15px;
+  transition: border 0.5s ease;
 }
 
 .featured {
