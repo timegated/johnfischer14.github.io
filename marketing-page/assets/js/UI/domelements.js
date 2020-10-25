@@ -4,6 +4,7 @@ export class UI  {
     this.modalContainer = document.querySelector('#modal-beta');
     this.overLay = document.querySelector('.overlay');
     this.modalForm = document.querySelector('#modal-beta-form');
+    this.submitForm = document.querySelector('#modalSubmit');
   }
 
   getElements() {
