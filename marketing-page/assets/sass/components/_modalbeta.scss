@@ -2,20 +2,19 @@
   display: grid;
   position: absolute;
   top: 30%;
-  left: 35%;
-  right: 25%;
   background: $background-color-yellow-4;
   border: 1px solid #000;
   border-radius: 15px;
-  padding: 3.50rem;
+  padding: 3.50rem 1rem 3.50rem 1rem;
+  margin: 1rem;
   z-index: 999;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   
 
  &__title {
-   background-color: $neutral-3;
-   align-self: center;
+   align-self: baseline;
    border-radius: 15px;
+   background-image: url('../../images/pug_logo_2.svg');
  }
 
   &__form {
@@ -46,6 +45,10 @@
       outline: none;
       border: none;
     }
+  }
+  @media (min-width: 768px) {
+    right: 20%;
+    left: 35%;
   }
 }
 

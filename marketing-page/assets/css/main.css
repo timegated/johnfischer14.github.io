@@ -387,19 +387,18 @@ em, label, input, b, span {
   display: grid;
   position: absolute;
   top: 30%;
-  left: 35%;
-  right: 25%;
   background: #F7C948;
   border: 1px solid #000;
   border-radius: 15px;
-  padding: 3.5rem;
+  padding: 3.5rem 1rem 3.5rem 1rem;
+  margin: 1rem;
   z-index: 999;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .modal-beta__title {
-  background-color: #E1E1E1;
-  align-self: center;
+  align-self: baseline;
   border-radius: 15px;
+  background-image: url("../../images/pug_logo_2.svg");
 }
 .modal-beta__form {
   border-radius: 15px;
@@ -426,6 +425,12 @@ em, label, input, b, span {
   border-radius: 15px;
   outline: none;
   border: none;
+}
+@media (min-width: 768px) {
+  .modal-beta {
+    right: 20%;
+    left: 35%;
+  }
 }
 
 .overlay {
@@ -455,7 +460,7 @@ em, label, input, b, span {
   margin: 0;
   padding: 1.25rem;
 }
-.main-nav-container .main-nav__navitem .main-nav__navlink:hover, .main-nav-container .main-nav__navitem .main-nav__navlink:visited {
+.main-nav-container .main-nav__navitem .main-nav__navlink:hover, .main-nav-container .main-nav__navitem .main-nav__navlink:active, .main-nav-container .main-nav__navitem .main-nav__navlink:visited {
   color: #3B3B3B;
   border: 1px solid #3B3B3B;
   border-radius: 15px;

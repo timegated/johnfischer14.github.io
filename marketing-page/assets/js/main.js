@@ -4,10 +4,14 @@ import { UI } from './UI/domelements.js';
   
   const ui = new UI();  
 
-  ui.cta.addEventListener('click', (e) => {
+  const { cta, modalContainer, overLay } = ui;
+
+  const toggleModal = (e) => {
     e.preventDefault();
-    ui.modalContainer.classList.toggle('none');
-    ui.overLay.classList.toggle('none')
-  });
+    modalContainer.classList.toggle('none');
+    overLay.classList.toggle('none');
+  };
+
+  cta.addEventListener('click', toggleModal);
  
 })();

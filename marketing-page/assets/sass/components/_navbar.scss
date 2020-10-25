@@ -11,7 +11,9 @@
         margin: 0;
         padding: 1.25rem;
 
-        &:hover, &:visited {
+        &:hover, 
+        &:active, 
+        &:visited {
           color: $neutral-2;
           border: 1px solid $neutral-2;
           border-radius: 15px;
